@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World clock</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -17,44 +19,25 @@
         <option value="tokyo">Tokyo</option>
         <option value="paris">Paris</option>
       </select>
-      <div class="city-container">
-        <div class="city">
+      <div class="location" id="los-angeles">
+        <div class="city-container">
           Los Angeles 🇺🇸
-          <div class="date">August 15th 2022</div>
+          <div class="date" id="date">August 15th 2022</div>
         </div>
-        <div class="time">
-          1:48:15
-          <div class="ampm">AM</div>
+        <div class="time-container">
+          <div class="time" id="time">1:48:15</div>
+          <div class="ampm" id="ampm">AM</div>
         </div>
       </div>
-      <div class="city-container">
-        <div class="city">
-          Los Angeles 🇺🇸
-          <div class="date">August 15th 2022</div>
+
+      <div class="location" id="paris">
+        <div class="city-container">
+          Paris 🇫🇷
+          <div class="date" id="date">August 15th 2022</div>
         </div>
-        <div class="time">
-          1:48:15
-          <div class="ampm">AM</div>
-        </div>
-      </div>
-      <div class="city-container">
-        <div class="city">
-          Los Angeles 🇺🇸
-          <div class="date">August 15th 2022</div>
-        </div>
-        <div class="time">
-          1:48:15
-          <div class="ampm">AM</div>
-        </div>
-      </div>
-      <div class="city-container">
-        <div class="city">
-          Los Angeles 🇺🇸
-          <div class="date">August 15th 2022</div>
-        </div>
-        <div class="time">
-          1:48:15
-          <div class="ampm">AM</div>
+        <div class="time-container">
+          <div class="time" id="time">1:48:15</div>
+          <div class="ampm" id="ampm">AM</div>
         </div>
       </div>
     </div>

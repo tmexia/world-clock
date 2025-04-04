@@ -23,7 +23,7 @@ select {
   border-color: #eae9ed;
 }
 
-.city-container {
+.location {
   border-bottom-style: dashed;
   border-color: #eae9ed;
   padding: 20px 0;
@@ -31,10 +31,11 @@ select {
   justify-content: space-between;
 }
 
-.city-container:last-child {
+.location:last-child {
   border: none;
 }
-.city {
+
+.city-container {
   font-weight: bold;
   font-size: 20px;
 }
@@ -45,17 +46,21 @@ select {
   color: #9d9d9d;
 }
 
-.time {
-  font-size: 30px;
-  font-weight: bold;
+.time-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.time {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .ampm {
   font-size: 12px;
   font-weight: bold;
+  padding: 3px;
 }
 footer {
   text-align: center;
