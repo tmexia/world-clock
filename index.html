@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World clock</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
-    <h1>What time is at your friends house?</h1>
-    <footer>This project was coded by <a href="https://github.com/tmexia" target="_blank">Teresa Mexia</a>, is <a href="https://github.com/tmexia/world-clock" target="_blank">open-sourced on GitHub</a> and is <a href="https://mexia-word-clock.netlify.app/" target="_blank">hosted on Netlify</a>.</footer>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>World Clocks</h1>
+
+      <select name="city" id="select-city">
+        <option value="">Choose city</option>
+        <option value="los angeles">Los Angeles</option>
+        <option value="sydney">Sydney</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="paris">Paris</option>
+      </select>
+      <div class="city-container">
+        <div class="city">Los Angeles</div>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15<span class="AM">AM</span></div>
+      </div>
+      <div class="city-container">
+        <div class="city">Los Angeles</div>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15<span class="AM">AM</span></div>
+      </div>
+      <div class="city-container">
+        <div class="city">Los Angeles</div>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15<span class="AM">AM</span></div>
+      </div>
+      <div class="city-container">
+        <div class="city">Los Angeles</div>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15<span class="AM">AM</span></div>
+      </div>
+    </div>
+    <footer>
+      This project was coded by
+      <a href="https://github.com/tmexia" target="_blank">Teresa Mexia</a>, is
+      <a href="https://github.com/tmexia/world-clock" target="_blank"
+        >open-sourced on GitHub</a
+      >
+      and is
+      <a href="https://mexia-word-clock.netlify.app/" target="_blank"
+        >hosted on Netlify</a
+      >.
+    </footer>
     <script src="src/script.js"></script>
-</body>
+  </body>
 </html>
