@@ -1,13 +1,33 @@
 function updateTime() {
-  let losAngelesElement = document.querySelector("#los-angeles");
-  let losAngelesElementDate = losAngelesElement.querySelector("#date");
-  let losAngelesElementTime = losAngelesElement.querySelector("#time");
-  let losAngelesElementAmpm = losAngelesElement.querySelector("#ampm");
-  let losAngelesTime = moment().tz("America/Los_Angeles");
+  let PhnomPenhElement = document.querySelector("#phnomPenh");
+  let PhnomPenhElementDate = PhnomPenhElement.querySelector("#date");
+  let PhnomPenhElementTime = PhnomPenhElement.querySelector("#time");
+  let PhnomPenhElementAmpm = PhnomPenhElement.querySelector("#ampm");
+  let PhnomPenhTime = moment().tz("Asia/Phnom_Penh");
 
-  losAngelesElementDate.innerHTML = losAngelesTime.format("MMMM Do YYYY");
-  losAngelesElementTime.innerHTML = losAngelesTime.format("h:mm:ss");
-  losAngelesElementAmpm.innerHTML = losAngelesTime.format("A");
+  PhnomPenhElementDate.innerHTML = PhnomPenhTime.format("MMMM Do YYYY");
+  PhnomPenhElementTime.innerHTML = PhnomPenhTime.format("h:mm:ss");
+  PhnomPenhElementAmpm.innerHTML = PhnomPenhTime.format("A");
+
+  let lisbonElement = document.querySelector("#lisbon");
+  let lisbonElementDate = lisbonElement.querySelector("#date");
+  let lisbonElementTime = lisbonElement.querySelector("#time");
+  let lisbonElementAmpm = lisbonElement.querySelector("#ampm");
+  let lisbonTime = moment().tz("Europe/Lisbon");
+
+  lisbonElementDate.innerHTML = lisbonTime.format("MMMM Do YYYY");
+  lisbonElementTime.innerHTML = lisbonTime.format("h:mm:ss");
+  lisbonElementAmpm.innerHTML = lisbonTime.format("A");
+
+  let madridElement = document.querySelector("#madrid");
+  let madridElementDate = madridElement.querySelector("#date");
+  let madridElementTime = madridElement.querySelector("#time");
+  let madridElementAmpm = madridElement.querySelector("#ampm");
+  let madridTime = moment().tz("Europe/madrid");
+
+  madridElementDate.innerHTML = madridTime.format("MMMM Do YYYY");
+  madridElementTime.innerHTML = madridTime.format("h:mm:ss");
+  madridElementAmpm.innerHTML = madridTime.format("A");
 }
 
 function updateCity(event) {
@@ -27,7 +47,9 @@ function updateCity(event) {
             <div class="time">${cityTime.format("h:mm:ss")}</div>
             <div class="ampm">${cityTime.format("A")}</div>
           </div>
-        </div>`;
+        </div>
+        <a href="/" class="link-index">All cities</a>
+        `;
 }
 
 updateTime();
